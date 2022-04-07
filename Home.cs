@@ -16,5 +16,10 @@ namespace loginFormDesign_winforms
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
