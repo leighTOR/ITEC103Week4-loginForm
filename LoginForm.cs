@@ -19,6 +19,11 @@ namespace loginFormDesign_winforms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Clicking the login button in the login panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text == "user.leigh" && txtPassword.Text == "leighpass")
@@ -33,6 +38,11 @@ namespace loginFormDesign_winforms
             }
         }
 
+        /// <summary>
+        /// Loading the panels of the Form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoginForm_Load(object sender, EventArgs e)
         {
             loginPage.Add(pnlLogin);
@@ -40,26 +50,51 @@ namespace loginFormDesign_winforms
             loginPage.Add(pnlForgetPassword);
         }
 
+        /// <summary>
+        /// Clicking the Login link label from Sign up panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void llbLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlLogin.BringToFront();
         }
 
+        /// <summary>
+        /// Clicking the Forgot Password link label from login panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void llbForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlForgetPassword.BringToFront();
         }
 
+        /// <summary>
+        /// Clicking the Back to Login link label from Forgot Password panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void llbGoBackToLoginForm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlLogin.BringToFront();
         }
 
+        /// <summary>
+        /// Clicking the Sign up link label from login panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void llbSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlSignUp.BringToFront();
         }
 
+        /// <summary>
+        /// Clicking Sign up button in sign up panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             Home home = new Home();
@@ -67,6 +102,11 @@ namespace loginFormDesign_winforms
             this.Hide();
         }
 
+        /// <summary>
+        /// Clicking submit button in Forgot Password panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSubmit_Click_1(object sender, EventArgs e)
         {
             if (txtPeerUsername.Text == "" && txtYourUsername.Text == "" && txtNewPassword.Text == "" && txtConfirmPassword.Text == "")

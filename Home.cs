@@ -17,6 +17,11 @@ namespace loginFormDesign_winforms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Clicking Exit button in Home form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

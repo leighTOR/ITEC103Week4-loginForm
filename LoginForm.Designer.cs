@@ -149,7 +149,7 @@
             this.llbSignup.BackColor = System.Drawing.Color.White;
             this.llbSignup.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.llbSignup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(99)))), ((int)(((byte)(133)))));
-            this.llbSignup.Location = new System.Drawing.Point(204, 468);
+            this.llbSignup.Location = new System.Drawing.Point(207, 513);
             this.llbSignup.Name = "llbSignup";
             this.llbSignup.Size = new System.Drawing.Size(83, 30);
             this.llbSignup.TabIndex = 6;
@@ -162,7 +162,7 @@
             this.lblNewUser.AutoSize = true;
             this.lblNewUser.BackColor = System.Drawing.Color.White;
             this.lblNewUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewUser.Location = new System.Drawing.Point(98, 468);
+            this.lblNewUser.Location = new System.Drawing.Point(101, 513);
             this.lblNewUser.Name = "lblNewUser";
             this.lblNewUser.Size = new System.Drawing.Size(109, 30);
             this.lblNewUser.TabIndex = 3;
@@ -698,9 +698,9 @@
             this.Controls.Add(this.picCompanyLogo);
             this.Controls.Add(this.lblCompanyName);
             this.Controls.Add(this.lblCompanyMotto);
-            this.Controls.Add(this.pnlSignUp);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlForgetPassword);
+            this.Controls.Add(this.pnlSignUp);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
