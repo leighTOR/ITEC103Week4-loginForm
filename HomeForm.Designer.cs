@@ -1,6 +1,6 @@
 ﻿namespace loginFormDesign_winforms
 {
-    partial class Home
+    partial class HomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 

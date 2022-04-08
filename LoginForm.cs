@@ -12,7 +12,7 @@ namespace loginFormDesign_winforms
 {
     public partial class LoginForm : Form
     {
-        List<Panel> loginPage = new List<Panel>();
+        List<Panel> panelList = new List<Panel>();
 
         public LoginForm()
         {
@@ -28,7 +28,7 @@ namespace loginFormDesign_winforms
         {
             if (txtUsername.Text == "user.leigh" && txtPassword.Text == "leighpass")
             {
-                Home home = new Home();
+                HomeForm home = new HomeForm();
                 home.Show();
                 this.Hide();
             }
@@ -45,9 +45,9 @@ namespace loginFormDesign_winforms
         /// <param name="e"></param>
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            loginPage.Add(pnlLogin);
-            loginPage.Add(pnlSignUp);
-            loginPage.Add(pnlForgetPassword);
+            panelList.Add(pnlLogin);
+            panelList.Add(pnlSignUp);
+            panelList.Add(pnlForgetPassword);
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace loginFormDesign_winforms
             }
             else
             {
-                Home home = new Home();
+                HomeForm home = new HomeForm();
                 home.Show();
                 this.Hide();
             }

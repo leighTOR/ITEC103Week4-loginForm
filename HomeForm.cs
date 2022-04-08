@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace loginFormDesign_winforms
 {
-    public partial class Home : Form
+    public partial class HomeForm : Form
     {
-        public Home()
+        public HomeForm()
         {
             InitializeComponent();
         }
