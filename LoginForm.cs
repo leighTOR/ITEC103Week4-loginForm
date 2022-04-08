@@ -67,9 +67,16 @@ namespace loginFormDesign_winforms
         /// <param name="e"></param>
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+            if (txtFirstName.Text == "" || txtLastName.Text == "" || txtCUsername.Text == "" || txtCPassword.Text == "")
+            {
+                MessageBox.Show("Please fill out all.");
+            }
+            else
+            {
+                Home home = new Home();
+                home.Show();
+                this.Hide();
+            }
         }
 
         /// <summary>
@@ -79,7 +86,7 @@ namespace loginFormDesign_winforms
         /// <param name="e"></param>
         private void btnSubmit_Click_1(object sender, EventArgs e)
         {
-            if (txtPeerUsername.Text == "" && txtYourUsername.Text == "" && txtNewPassword.Text == "" && txtConfirmPassword.Text == "")
+            if (txtPeerUsername.Text == "" || txtYourUsername.Text == "" || txtNewPassword.Text == "" || txtConfirmPassword.Text == "")
             {
                 MessageBox.Show("Please fill out all.");
             }
