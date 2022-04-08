@@ -51,16 +51,6 @@ namespace loginFormDesign_winforms
         }
 
         /// <summary>
-        /// Clicking the Login link label from Sign up panel
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void llbLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            pnlLogin.BringToFront();
-        }
-
-        /// <summary>
         /// Clicking the Forgot Password link label from login panel
         /// </summary>
         /// <param name="sender"></param>
@@ -68,26 +58,6 @@ namespace loginFormDesign_winforms
         private void llbForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlForgetPassword.BringToFront();
-        }
-
-        /// <summary>
-        /// Clicking the Back to Login link label from Forgot Password panel
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void llbGoBackToLoginForm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            pnlLogin.BringToFront();
-        }
-
-        /// <summary>
-        /// Clicking the Sign up link label from login panel
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void llbSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            pnlSignUp.BringToFront();
         }
 
         /// <summary>
@@ -121,6 +91,26 @@ namespace loginFormDesign_winforms
                 txtYourUsername.Clear();
                 txtNewPassword.Clear();
             }
+        }
+
+        /// <summary>
+        /// Clicking the Login link label from Sign up panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void llbLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlLogin.BringToFront();
+        }
+
+        /// <summary>
+        /// Clicking the Sign up link label from login panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void llbSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlSignUp.BringToFront();
         }
     }
 }

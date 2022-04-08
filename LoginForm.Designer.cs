@@ -635,7 +635,7 @@
             this.llbGoBackToLoginForm.TabIndex = 29;
             this.llbGoBackToLoginForm.TabStop = true;
             this.llbGoBackToLoginForm.Text = "Go back to Login Form";
-            this.llbGoBackToLoginForm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbGoBackToLoginForm_LinkClicked);
+            this.llbGoBackToLoginForm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbLogin_LinkClicked);
             // 
             // btnSubmit
             // 
@@ -698,10 +698,11 @@
             this.Controls.Add(this.picCompanyLogo);
             this.Controls.Add(this.lblCompanyName);
             this.Controls.Add(this.lblCompanyMotto);
-            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlForgetPassword);
             this.Controls.Add(this.pnlSignUp);
+            this.Controls.Add(this.pnlLogin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
