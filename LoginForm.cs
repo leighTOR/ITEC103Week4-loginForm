@@ -101,7 +101,7 @@ namespace loginFormDesign_winforms
         }
 
         /// <summary>
-        /// Clicking the Login link label from Sign up panel
+        /// Clicking the Login link label from Sign up and Forgot pass panels
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
